@@ -18,10 +18,11 @@
     <!-- Header com controles -->
     <div id="header">
         <div class="header-content">
-            <h1>🏖️ Mapa Turístico de Búzios
+            <h1>🏖️ Mapa Turístico de Búzios - Seu Guia Completo
               <button id="btn-praias-menu" class="btn-praias-menu">Praias ▼</button>
             </h1>
             <div class="controls">
+                <button id="btn-tutorial" class="btn-tutorial">❓ Tutorial</button>
                 <label for="pousada-select">Estou hospedado na:</label>
                 <select id="pousada-select">
                     <option value="">Selecione sua pousada</option>
@@ -46,7 +47,8 @@
     <!-- Legenda -->
     <div id="legend">
         <button id="toggle-legend" class="toggle-legend-btn">🛈 Legenda</button>
-        <h3>Legenda</h3>
+        <h3>Controles do Mapa</h3>
+        <p class="legend-subtitle">Clique para mostrar/ocultar no mapa:</p>
         <div class="legend-item">
             <input type="checkbox" id="filtro-pousadas" checked>
             <img src="imagens/pousada.png" alt="Pousada" class="legend-icon"> Pousadas
@@ -75,6 +77,9 @@
             <input type="checkbox" id="filtro-cambio" checked>
             <img src="imagens/cambio.png" alt="Casa de Câmbio" class="legend-icon"> Casa de Câmbio
         </div>
+        <div class="legend-tip">
+            💡 <strong>Dica:</strong> Selecione sua pousada acima para ver rotas personalizadas!
+        </div>
     </div>
 
     <!-- Loading overlay -->
@@ -93,6 +98,72 @@
           <button id="btn-van" class="modal-btn-van">DE VAN</button>
         </div>
       </div>
+    </div>
+
+    <!-- Modal Tutorial -->
+    <div id="modal-tutorial" class="modal-tutorial">
+        <div class="modal-tutorial-content">
+            <div class="tutorial-header">
+                <h2>🏖️ Bem-vindo ao Mapa de Búzios!</h2>
+                <button id="close-tutorial" class="close-tutorial">×</button>
+            </div>
+            <div class="tutorial-body">
+                <div class="tutorial-step" id="step-1">
+                    <h3>📍 Passo 1: Selecione sua Pousada</h3>
+                    <p>Primeiro, selecione onde você está hospedado no menu superior. Isso permitirá que o mapa calcule rotas personalizadas para você!</p>
+                    <div class="tutorial-highlight">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDJMMTMuMDkgOC4yNkwyMCA5TDEzLjA5IDE1Ljc0TDEyIDIyTDEwLjkxIDE1Ljc0TDQgOUwxMC45MSA4LjI2TDEyIDJaIiBmaWxsPSIjRkY2QjM1Ii8+Cjwvc3ZnPgo=" alt="Seta">
+                        <span>Selecione sua pousada aqui</span>
+                    </div>
+                </div>
+                
+                <div class="tutorial-step" id="step-2" style="display: none;">
+                    <h3>🗺️ Passo 2: Explore os Pontos de Interesse</h3>
+                    <p>Clique nos ícones coloridos no mapa para descobrir:</p>
+                    <ul>
+                        <li>🏖️ <strong>Praias</strong> - Informações e características</li>
+                        <li>🚐 <strong>Transporte</strong> - Pontos de van e ônibus</li>
+                        <li>🎉 <strong>Feirinha</strong> - Horários e como chegar</li>
+                        <li>💱 <strong>Casa de Câmbio</strong> - Localização e rotas</li>
+                        <li>⛵ <strong>Escuna</strong> - Rota do passeio marítimo</li>
+                    </ul>
+                </div>
+                
+                <div class="tutorial-step" id="step-3" style="display: none;">
+                    <h3>📍 Passo 3: Calcule Rotas</h3>
+                    <p>Após selecionar sua pousada, você verá botões "Como chegar da minha pousada" nos pontos de interesse. Clique para ver a rota!</p>
+                    <div class="tutorial-tip">
+                        💡 <strong>Dica:</strong> Para algumas praias, você pode escolher ir andando ou de van!
+                    </div>
+                </div>
+                
+                <div class="tutorial-step" id="step-4" style="display: none;">
+                    <h3>🎛️ Passo 4: Use os Controles</h3>
+                    <p>Na legenda à esquerda, você pode:</p>
+                    <ul>
+                        <li>✅ Mostrar/ocultar tipos de pontos</li>
+                        <li>🎯 Centralizar o mapa</li>
+                        <li>🏖️ Acessar menu rápido de praias</li>
+                    </ul>
+                </div>
+                
+                <div class="tutorial-step" id="step-5" style="display: none;">
+                    <h3>🎉 Pronto para Explorar!</h3>
+                    <p>Agora você está pronto para descobrir as maravilhas de Búzios! Aproveite sua estadia e explore com segurança.</p>
+                    <div class="tutorial-final">
+                        <p><strong>Dica Extra:</strong> Salve este mapa nos favoritos para consultar sempre que precisar!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tutorial-footer">
+                <button id="prev-step" class="tutorial-btn tutorial-btn-secondary" style="display: none;">← Anterior</button>
+                <div class="tutorial-progress">
+                    <span id="step-counter">1 de 5</span>
+                </div>
+                <button id="next-step" class="tutorial-btn tutorial-btn-primary">Próximo →</button>
+                <button id="finish-tutorial" class="tutorial-btn tutorial-btn-primary" style="display: none;">Começar a Explorar! 🚀</button>
+            </div>
+        </div>
     </div>
 
     <!-- Leaflet JavaScript -->
@@ -173,6 +244,202 @@
           praiaBar.classList.toggle('praias-bar-fechada');
         });
       }
+    });
+
+    // ===== SISTEMA DE TUTORIAL =====
+    document.addEventListener('DOMContentLoaded', function() {
+        let currentStep = 1;
+        const totalSteps = 5;
+        
+        // Verificar se é primeira visita
+        const isFirstVisit = !localStorage.getItem('buzios_map_visited');
+        
+        if (isFirstVisit) {
+            // Mostrar indicador de primeira visita
+            showFirstVisitIndicator();
+        }
+        
+        // Event listeners para o tutorial
+        const btnTutorial = document.getElementById('btn-tutorial');
+        const modalTutorial = document.getElementById('modal-tutorial');
+        const closeTutorial = document.getElementById('close-tutorial');
+        const nextStep = document.getElementById('next-step');
+        const prevStep = document.getElementById('prev-step');
+        const finishTutorial = document.getElementById('finish-tutorial');
+        
+        btnTutorial.addEventListener('click', openTutorial);
+        closeTutorial.addEventListener('click', closeTutorialModal);
+        nextStep.addEventListener('click', goToNextStep);
+        prevStep.addEventListener('click', goToPrevStep);
+        finishTutorial.addEventListener('click', finishTutorialFlow);
+        
+        // Fechar modal clicando fora
+        modalTutorial.addEventListener('click', function(e) {
+            if (e.target === modalTutorial) {
+                closeTutorialModal();
+            }
+        });
+        
+        function showFirstVisitIndicator() {
+            const indicator = document.createElement('div');
+            indicator.className = 'first-visit-indicator';
+            indicator.innerHTML = `
+                <div>
+                    <strong>👋 Primeira vez em Búzios?</strong>
+                    <p>Que tal um tour rápido pelo mapa?</p>
+                    <button onclick="startTutorialFromIndicator()">Começar Tutorial</button>
+                    <button onclick="dismissFirstVisit()" style="margin-left: 10px;">Não, obrigado</button>
+                </div>
+            `;
+            document.body.appendChild(indicator);
+            
+            // Auto-remover após 10 segundos
+            setTimeout(() => {
+                if (indicator.parentNode) {
+                    indicator.remove();
+                }
+            }, 10000);
+        }
+        
+        window.startTutorialFromIndicator = function() {
+            document.querySelector('.first-visit-indicator').remove();
+            openTutorial();
+        };
+        
+        window.dismissFirstVisit = function() {
+            document.querySelector('.first-visit-indicator').remove();
+            localStorage.setItem('buzios_map_visited', 'true');
+        };
+        
+        function openTutorial() {
+            currentStep = 1;
+            updateTutorialStep();
+            modalTutorial.style.display = 'block';
+        }
+        
+        function closeTutorialModal() {
+            modalTutorial.style.display = 'none';
+            localStorage.setItem('buzios_map_visited', 'true');
+        }
+        
+        function goToNextStep() {
+            if (currentStep < totalSteps) {
+                currentStep++;
+                updateTutorialStep();
+            }
+        }
+        
+        function goToPrevStep() {
+            if (currentStep > 1) {
+                currentStep--;
+                updateTutorialStep();
+            }
+        }
+        
+        function finishTutorialFlow() {
+            closeTutorialModal();
+            // Destacar seleção de pousada
+            const pousadaSelect = document.getElementById('pousada-select');
+            pousadaSelect.style.animation = 'pulse 1s ease-in-out 3';
+            pousadaSelect.focus();
+        }
+        
+        function updateTutorialStep() {
+            // Esconder todos os passos
+            for (let i = 1; i <= totalSteps; i++) {
+                const step = document.getElementById(`step-${i}`);
+                if (step) step.style.display = 'none';
+            }
+            
+            // Mostrar passo atual
+            const currentStepEl = document.getElementById(`step-${currentStep}`);
+            if (currentStepEl) currentStepEl.style.display = 'block';
+            
+            // Atualizar contador
+            document.getElementById('step-counter').textContent = `${currentStep} de ${totalSteps}`;
+            
+            // Controlar botões
+            prevStep.style.display = currentStep > 1 ? 'block' : 'none';
+            
+            if (currentStep === totalSteps) {
+                nextStep.style.display = 'none';
+                finishTutorial.style.display = 'block';
+            } else {
+                nextStep.style.display = 'block';
+                finishTutorial.style.display = 'none';
+            }
+        }
+        
+        // Adicionar tooltips contextuais
+        addContextualTooltips();
+        
+        function addContextualTooltips() {
+            // Tooltip para seleção de pousada
+            const pousadaSelect = document.getElementById('pousada-select');
+            pousadaSelect.addEventListener('mouseenter', function() {
+                if (!pousadaSelecionada) {
+                    showTooltip(this, 'Selecione sua pousada para rotas personalizadas!');
+                }
+            });
+            
+            // Tooltip para legenda
+            const legend = document.getElementById('legend');
+            legend.addEventListener('mouseenter', function() {
+                showTooltip(this, 'Use os checkboxes para mostrar/ocultar pontos no mapa');
+            });
+            
+            // Feedback para seleção de pousada
+            pousadaSelect.addEventListener('change', function() {
+                if (this.value) {
+                    showFeedbackNotification('✅ Pousada selecionada! Agora você pode ver rotas personalizadas.');
+                    this.classList.add('pousada-selecionada');
+                    setTimeout(() => {
+                        this.classList.remove('pousada-selecionada');
+                    }, 2000);
+                }
+            });
+            
+            // Feedback para botão centralizar
+            const resetBtn = document.getElementById('reset-view');
+            resetBtn.addEventListener('click', function() {
+                showFeedbackNotification('🎯 Mapa centralizado!');
+            });
+        }
+        
+        function showFeedbackNotification(message) {
+            const notification = document.createElement('div');
+            notification.className = 'feedback-notification';
+            notification.textContent = message;
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+                if (notification.parentNode) {
+                    notification.remove();
+                }
+            }, 3000);
+        }
+        
+        function showTooltip(element, text) {
+            const tooltip = document.createElement('div');
+            tooltip.className = 'tooltip show';
+            tooltip.textContent = text;
+            
+            const rect = element.getBoundingClientRect();
+            tooltip.style.left = rect.left + (rect.width / 2) - 100 + 'px';
+            tooltip.style.top = rect.bottom + 10 + 'px';
+            
+            document.body.appendChild(tooltip);
+            
+            setTimeout(() => {
+                tooltip.remove();
+            }, 3000);
+            
+            element.addEventListener('mouseleave', function() {
+                if (tooltip.parentNode) {
+                    tooltip.remove();
+                }
+            }, { once: true });
+        }
     });
     </script>
 </body>
