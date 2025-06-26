@@ -39,50 +39,50 @@ const praias = [
     {
         nome: "Praia de Geribá",
         coordenadas: [-22.779634406667768, -41.91277299939872],
-        descricao: "Uma das praias mais famosas de Búzios, ideal para surfistas e jovens. Possui ótima infraestrutura com bares e restaurantes.",
-        caracteristicas: "Ondas fortes, ideal para pegar sol, esportes aquáticos"
+        descricao: "🏄‍♂️ A praia mais famosa de Búzios! Ideal para surfistas e jovens. Possui ótima infraestrutura com bares, restaurantes e aluguel de equipamentos. Ambiente animado durante todo o dia.",
+        caracteristicas: "Ondas fortes, ideal para pegar sol, esportes aquáticos, vida noturna"
     },
     {
         nome: "Praia da Ferradura",
         coordenadas: [-22.76831448988582, -41.88563486386712],
-        descricao: "Praia em formato de ferradura com águas calmas, perfeita para famílias com crianças.",
-        caracteristicas: "Águas calmas, ideal para famílias, formato único"
+        descricao: "👨‍👩‍👧‍👦 Praia em formato de ferradura com águas calmas e cristalinas. Perfeita para famílias com crianças, oferece segurança e tranquilidade. Ótima para relaxar e nadar.",
+        caracteristicas: "Águas calmas, ideal para famílias, formato único, segura para crianças"
     },
     {
         nome: "Praia do Forno",
         coordenadas: [-22.761265942679792, -41.875421949269466],
-        descricao: "Pequena praia selvagem acessível por trilha, com águas cristalinas e ambiente preservado.",
-        caracteristicas: "Trilha de acesso, águas cristalinas, natureza preservada"
+        descricao: "🥾 Pequena praia selvagem acessível por trilha de 15 minutos. Recompensa com águas cristalinas e ambiente preservado. Leve água e protetor solar!",
+        caracteristicas: "Trilha de acesso, águas cristalinas, natureza preservada, aventura"
     },
     {
         nome: "Praia de João Fernandes",
         coordenadas: [-22.742449272674143, -41.876741298920045],
-        descricao: "Praia sofisticada com beach clubs exclusivos e águas azul-turquesa.",
-        caracteristicas: "Restaurantes, sofisticada, águas azul-turquesa"
+        descricao: "🍸 Praia sofisticada com beach clubs exclusivos e águas azul-turquesa. Ambiente elegante com restaurantes de alta qualidade. Ideal para um dia especial.",
+        caracteristicas: "Restaurantes sofisticados, águas azul-turquesa, ambiente elegante"
     },
     {
         nome: "Praia Brava",
         coordenadas: [-22.75462011660344, -41.87259766059793],
-        descricao: "Praia selvagem com ondas fortes, frequentada por surfistas e naturistas.",
-        caracteristicas: "Ondas fortes, Areia branca, ambiente selvagem"
+        descricao: "🌊 Praia selvagem com ondas fortes e areia branca. Frequentada por surfistas e naturistas. Ambiente mais reservado e natural.",
+        caracteristicas: "Ondas fortes, areia branca, ambiente selvagem, naturismo opcional"
     },
     {
         nome: "Praia da Tartaruga",
         coordenadas: [-22.756957049091795, -41.90447499715506],
-        descricao: "Pequena praia protegida, ideal para relaxar com caipirinha e observar a vida marinha.",
-        caracteristicas: "Pequena, protegida, vida marinha"
+        descricao: "🐢 Pequena praia protegida, ideal para relaxar com uma caipirinha e observar a vida marinha. Ambiente tranquilo e acolhedor.",
+        caracteristicas: "Pequena, protegida, vida marinha, ambiente tranquilo"
     },
     {
         nome: "Praia dos Ossos",
         coordenadas: [-22.746013415427598, -41.88125799597498],
-        descricao: "Praia histórica no centro de Búzios, com vista para a Igreja de Sant'Ana.",
-        caracteristicas: "Centro histórico, Igreja de Sant'Ana, tradicional"
+        descricao: "⛪ Praia histórica no centro de Búzios, com vista para a Igreja de Sant'Ana. Rica em história e cultura local. Fácil acesso a pé.",
+        caracteristicas: "Centro histórico, Igreja de Sant'Ana, tradicional, fácil acesso"
     },
     {
         nome: "Praia da Azeda",
         coordenadas: [-22.74231433041134, -41.88178684833913],
-        descricao: "Praia de aguas cristalinas, limpa e tranquila, ideal para mergulho, standup e familia.",
-        caracteristicas: "Beleza Caprichada, proteção ambiental, águas cristalinas, a maré sóbe a cada 6 horas, ideal para mergulho e standup paddle"
+        descricao: "💎 Praia de águas cristalinas, limpa e tranquila. Ideal para mergulho, stand-up paddle e famílias. A maré sobe a cada 6 horas - planeje sua visita!",
+        caracteristicas: "Águas cristalinas, ideal para mergulho e stand-up paddle, proteção ambiental"
     }
 ];
 
@@ -141,37 +141,72 @@ const transportes = [
         horarios: "Saídas a cada 30 minutos das 7h30 às 23h00",
         preco: "R$ 5,00 por trecho",
         destinos: "Circuito urbano completo"
+    },
+    {
+        tipo: "van",
+        nome: "Ponto de Van Centro 3",
+        coordenadas: [-22.758989129691727, -41.88765637847316],
+        descricao: "Ponto que Conecta a Praia de João Fernandes, Ossos e Azeda.",
+        horarios: "Saídas a cada 30 minutos das 7h30 às 23h00",
+        preco: "R$ 5,00 por trecho",
+        destinos: "Azeda,João Fernandes, Ossos"
+    },
+    {
+        tipo: "van",
+        nome: "Ponto de Van Centro 4",
+        coordenadas: [-22.75728797556695, -41.885582774434866],
+        descricao: "Ponto que Conecta a Praia de João Fernandes, Ossos e Azeda.",
+        horarios: "Saídas a cada 30 minutos das 7h30 às 23h00",
+        preco: "R$ 5,00 por trecho",
+        destinos: "Azeda,João Fernandes, Ossos"
+    },
+    {
+        tipo: "van",
+        nome: "Ponto da Brava",
+        coordenadas: [-22.751871179803526, -41.878131929353266],
+        descricao: "Ponto que Conecta a Praia Brava.",
+        horarios: "Saídas a cada 30 minutos das 7h30 às 23h00",
+        preco: "R$ 5,00 por trecho",
+        destinos: "Praia Brava, Silk Beach"
     }
-];
+]; 
 
-// ===== DADOS DE EVENTOS =====
+// ===== DADOS DE EVENTOS ===== 
 const eventos = [
     {
         nome: "Feirinha de Artesanato",
         coordenadas: [-22.76152242864707, -41.89058416402547],
-        descricao: "Feira de artesanato local com produtos típicos da região.",
+        descricao: "Feira de artesanato local com produtos típicos da região, localizada na Rua das Pedras. Um dos pontos turísticos mais famosos de Búzios, oferece artesanato local, roupas, acessórios e comidas típicas.",
         quando: "Quartas e sábados das 18h às 23h",
-        dicas: "Ótimo local para comprar lembranças e experimentar comidas locais com Show ao vivo.",
-        icone: "imagens/feirinha.png" // Novo campo para ícone personalizado
+        dicas: "Ótimo local para comprar lembranças e experimentar comidas locais com Show ao vivo. Chegue cedo para evitar multidões.",
+        comoChegar: {
+            aPe: "A feirinha fica na famosa Rua das Pedras, no centro de Búzios. É facilmente acessível a pé de qualquer pousada do centro.",
+            transporte: "Todas as vans param próximo ao centro. Desça no ponto central e caminhe pela Rua das Pedras.",
+            distancias: {
+                "pousada1": "5 minutos a pé",
+                "pousada2": "3 minutos a pé", 
+                "pousada3": "7 minutos a pé"
+            }
+        },
+        icone: "imagens/feirinha.png"
     }
-
 ];
 
 // ===== ROTA DA ESCUNA =====
 const rotaEscunaCoords = [
     [-22.75387824649019, -41.886847134655014], // Saída - Cais do Centro
-    [-22.748012980151014, -41.883910278167136], // Ponto 1 - Ilha Feia
-    [-22.742219906572323, -41.884835822853425],  // Ponto 2 - Ilha Branca  
-    [-22.73927264756351, -41.88216540555681],  // Ponto 3 - Ilha Azul
-    [-22.74041754785935,  -41.87596198577092],  //  4**
+    [-22.748012980151014, -41.883910278167136], // Ponto 1 - 
+    [-22.742219906572323, -41.884835822853425],  // Ponto 2 -  
+    [-22.73927264756351, -41.88216540555681],  // Ponto 3 - 
+    [-22.74041754785935,  -41.87596198577092],  //  4** parada joao fernandes
     [-22.731369870021528, -41.875758724054435],  //  5**
     [-22.729769441385436, -41.89642799204553],  //  6**
-    [-22.7292045797465, -41.90780884933111],  //  8**
-    [-22.726134436146747, -41.922855206518676],  // 9*
-    [-22.741831561860938, -41.92061387274492],  // **Nova 7**
-    [-22.75294722640286,  -41.905024134549016], // **Nova 8**
-    [-22.746557493801163,-41.897951012585374],  // **Nova 9**
-    [-22.750284874133026,-41.89390922860865],   // **Nova 10**
+    [-22.7292045797465, -41.90780884933111],  //  7**
+    [-22.726134436146747, -41.922855206518676],  // 8* parada ilha feia
+    [-22.741831561860938, -41.92061387274492],  // **Nova 9**
+    [-22.75294722640286,  -41.905024134549016], // **Nova 10** parada tartaruga
+    [-22.746557493801163,-41.897951012585374],  // **Nova 11**
+    [-22.750284874133026,-41.89390922860865],   // **Nova 12**
  
     [-22.75387824649019, -41.886847134655014]  // Retorno - Orla Bardot
 ];
@@ -224,7 +259,7 @@ function inicializarMapa() {
     configurarEventos();
 
     // Configurar filtros da legenda
-    // configurarFiltrosLegenda(); // Removido para evitar erro
+    configurarFiltrosLegenda();
 
     window.marcadores = marcadores;
     window.map = map;
@@ -338,56 +373,102 @@ function adicionarMarcadoresEventos() {
             popupAnchor: [0, -16]
         });
 
-        const popup = `
-            <div>
-                <h3>🎉 ${evento.nome}</h3>
-                <p>${evento.descricao}</p>
-                <div class="popup-info">
-                    <strong>📅 Quando:</strong> ${evento.quando}<br>
-                    <strong>💡 Dicas:</strong> ${evento.dicas}
+        // Gerar informações de como chegar baseado na pousada selecionada
+        function gerarInfoComoChegar() {
+            if (!evento.comoChegar) return '';
+            
+            let infoChegar = `<div class="como-chegar-info">
+                <h4>🚶‍♂️ Como chegar:</h4>
+                <p><strong>A pé:</strong> ${evento.comoChegar.aPe}</p>
+                <p><strong>Transporte:</strong> ${evento.comoChegar.transporte}</p>`;
+            
+            if (pousadaSelecionada && evento.comoChegar.distancias && evento.comoChegar.distancias[pousadaSelecionada]) {
+                const pousadaNome = pousadas[pousadaSelecionada].nome;
+                const distancia = evento.comoChegar.distancias[pousadaSelecionada];
+                infoChegar += `<p><strong>Da ${pousadaNome}:</strong> ${distancia}</p>`;
+            }
+            
+            infoChegar += '</div>';
+            return infoChegar;
+        }
+
+        function gerarPopupEvento() {
+            return `
+                <div>
+                    <h3>🎉 ${evento.nome}</h3>
+                    <p>${evento.descricao}</p>
+                    <div class="popup-info">
+                        <strong>📅 Quando:</strong> ${evento.quando}<br>
+                        <strong>💡 Dicas:</strong> ${evento.dicas}
+                    </div>
+                    ${gerarInfoComoChegar()}
+                    ${pousadaSelecionada ? `
+                        <button class="popup-button rota-evento-btn"
+                            data-coords='${JSON.stringify(evento.coordenadas)}'
+                            data-nome='${evento.nome.replace(/'/g, "\\'")}'
+                        >
+                            📍 Como chegar da minha pousada
+                        </button>
+                    ` : ''}
                 </div>
-            </div>
-        `;
+            `;
+        }
 
         const marker = L.marker(evento.coordenadas, { icon: icone })
-            .bindPopup(popup)
+            .bindPopup(gerarPopupEvento())
             .addTo(grupoMarcadores.eventos);
+
+        // Atualizar popup quando abrir
+        marker.on('popupopen', function() {
+            marker.setPopupContent(gerarPopupEvento());
+        });
 
         // Se for feirinha, salva para filtro
         if (evento.icone && evento.icone.includes('feirinha.png')) {
             marcadoresFeirinha.push(marker);
         }
+        
+        // Salvar referência para atualização posterior
+        if (!marcadores.eventos) marcadores.eventos = [];
+        marcadores.eventos.push(marker);
     });
 }
 
 function adicionarRotaEscuna() {
     marcadoresEscuna = [];
+    // Índices das paradas: 4 (João Fernandes), 8 (Ilha Feia), 10 (Tartaruga)
+    const paradas = {
+        4: { nome: "João Fernandes", descricao: "Parada para banho e contemplação na famosa praia de João Fernandes." },
+        8: { nome: "Ilha Feia", descricao: "Parada para mergulho e observação da vida marinha na Ilha Feia." },
+        10: { nome: "Tartaruga", descricao: "Parada para relaxar e nadar na Praia da Tartaruga." }
+    };
+
     rotaEscunaCoords.forEach((coord, index) => {
-        if (index === 0 || index === rotaEscunaCoords.length - 1) return; // Pular início e fim
+        if (paradas[index]) {
+            const icone = L.icon({
+                iconUrl: 'imagens/escuna.png',
+                iconSize: [32, 32],
+                iconAnchor: [16, 16],
+                popupAnchor: [0, -16]
+            });
 
-        const icone = L.icon({
-            iconUrl: 'imagens/escuna.png',
-            iconSize: [32, 32],
-            iconAnchor: [16, 16],
-            popupAnchor: [0, -16]
-        });
-
-        const popup = `
-            <div>
-                <h3>⛵ Ponto da Escuna ${index}</h3>
-                <p>Parada ${index} do passeio de escuna pelas ilhas de Búzios.</p>
-                <div class="popup-info">
-                    <strong>🕐 Duração da parada:</strong> 30 minutos<br>
-                    <strong>🐠 Atividades:</strong> Mergulho livre, contemplação
+            const popup = `
+                <div>
+                    <h3>⛵ Parada ${paradas[index].nome}</h3>
+                    <p>${paradas[index].descricao}</p>
+                    <div class="popup-info">
+                        <strong>🕐 Duração da parada:</strong> 30 minutos<br>
+                        <strong>🐠 Atividades:</strong> Mergulho livre, contemplação
+                    </div>
                 </div>
-            </div>
-        `;
+            `;
 
-        const marker = L.marker(coord, { icon: icone })
-            .bindPopup(popup)
-            .addTo(map);
+            const marker = L.marker(coord, { icon: icone })
+                .bindPopup(popup)
+                .addTo(map);
 
-        marcadoresEscuna.push(marker);
+            marcadoresEscuna.push(marker);
+        }
     });
 
     // Adicionar linha da rota
@@ -421,26 +502,58 @@ function adicionarMarcadoresCasasCambio() {
             iconAnchor: [16, 16],
             popupAnchor: [0, -16]
         });
-        // Popup com botão para calcular rota a partir de uma pousada
-        const popup = `
-            <div>
-                <h3>💱 ${cambio.nome}</h3>
-                <p>${cambio.descricao}</p>
-                <div class="popup-info">
-                    <label for="select-pousada-cambio-${idx}">Partir de:</label>
-                    <select id="select-pousada-cambio-${idx}" class="select-pousada-cambio">
-                        <option value="">Selecione a pousada</option>
-                        <option value="pousada1">Pousada Centro Class</option>
-                        <option value="pousada2">Pousada Casa Centro</option>
-                        <option value="pousada3">Pousada Centro Up</option>
-                    </select>
-                    <button class="popup-button rota-cambio-btn" data-cambio="${idx}">Como chegar aqui</button>
-                </div>
-            </div>
-        `;
-        L.marker(cambio.coordenadas, { icon: icone })
-            .bindPopup(popup)
-            .addTo(map);
+        
+        // Função para gerar o popup dinamicamente
+        function gerarPopupCambio() {
+            if (pousadaSelecionada) {
+                // Se já tem pousada selecionada, mostra apenas o botão direto
+                const pousadaNome = pousadas[pousadaSelecionada].nome;
+                return `
+                    <div>
+                        <h3>💱 ${cambio.nome}</h3>
+                        <p>${cambio.descricao}</p>
+                        <div class="popup-info">
+                            <p><strong>Partindo de:</strong> ${pousadaNome}</p>
+                            <button class="popup-button rota-cambio-btn" data-cambio="${idx}" data-pousada="${pousadaSelecionada}">
+                                📍 Como chegar da minha pousada
+                            </button>
+                        </div>
+                    </div>
+                `;
+            } else {
+                // Se não tem pousada selecionada, mostra o select
+                return `
+                    <div>
+                        <h3>💱 ${cambio.nome}</h3>
+                        <p>${cambio.descricao}</p>
+                        <div class="popup-info">
+                            <label for="select-pousada-cambio-${idx}">Partir de:</label>
+                            <select id="select-pousada-cambio-${idx}" class="select-pousada-cambio">
+                                <option value="">Selecione a pousada</option>
+                                <option value="pousada1">Pousada Centro Class</option>
+                                <option value="pousada2">Pousada Casa Centro</option>
+                                <option value="pousada3">Pousada Centro Up</option>
+                            </select>
+                            <button class="popup-button rota-cambio-btn" data-cambio="${idx}">Como chegar aqui</button>
+                        </div>
+                    </div>
+                `;
+            }
+        }
+        
+        const marcador = L.marker(cambio.coordenadas, { icon: icone }).addTo(map);
+        
+        // Atualizar popup quando abrir
+        marcador.on('popupopen', function() {
+            marcador.setPopupContent(gerarPopupCambio());
+        });
+        
+        // Definir popup inicial
+        marcador.bindPopup(gerarPopupCambio());
+        
+        // Salvar referência para atualização posterior
+        if (!marcadores.casasCambio) marcadores.casasCambio = [];
+        marcadores.casasCambio[idx] = marcador;
     });
 }
 
@@ -472,11 +585,24 @@ function configurarEventos() {
             calcularRota(coords, nome);
         }
 
+        const btnEvento = e.target.closest('.rota-evento-btn');
+        if (btnEvento) {
+            const coords = JSON.parse(btnEvento.getAttribute('data-coords'));
+            const nome = btnEvento.getAttribute('data-nome');
+            calcularRota(coords, nome);
+        }
+
         const btnCambio = e.target.closest('.rota-cambio-btn');
         if (btnCambio) {
             const idx = btnCambio.getAttribute('data-cambio');
-            const select = document.getElementById(`select-pousada-cambio-${idx}`);
-            const pousadaId = select ? select.value : null;
+            let pousadaId = btnCambio.getAttribute('data-pousada');
+            
+            // Se não tem pousada no data-attribute, tenta pegar do select
+            if (!pousadaId) {
+                const select = document.getElementById(`select-pousada-cambio-${idx}`);
+                pousadaId = select ? select.value : null;
+            }
+            
             if (!pousadaId) {
                 alert('Selecione a pousada de origem!');
                 return;
@@ -502,6 +628,8 @@ function selecionarPousada(pousadaId) {
     document.getElementById('pousada-select').value = pousadaId;
     map.setView(pousada.coordenadas, 14);
     atualizarPopupsPraias();
+    atualizarPopupsCasasCambio();
+    atualizarPopupsEventos();
     console.log(`Pousada selecionada: ${pousada.nome}`);
 }
 
@@ -512,12 +640,71 @@ function limparSelecaoPousada() {
     pousadaSelecionada = null;
     limparRotas();
     atualizarPopupsPraias();
+    atualizarPopupsCasasCambio();
+    atualizarPopupsEventos();
 }
 
 function atualizarPopupsPraias() {
     // Remover e recriar marcadores das praias com popups atualizados
     grupoMarcadores.praias.clearLayers();
     adicionarMarcadoresPraias();
+}
+
+function atualizarPopupsEventos() {
+    // Remover e recriar marcadores dos eventos com popups atualizados
+    grupoMarcadores.eventos.clearLayers();
+    adicionarMarcadoresEventos();
+}
+
+function atualizarPopupsCasasCambio() {
+    // Atualizar popups das casas de câmbio quando pousada for selecionada/desselecionada
+    if (marcadores.casasCambio) {
+        marcadores.casasCambio.forEach(marcador => {
+            if (marcador && marcador.getPopup()) {
+                // Força a atualização do popup na próxima abertura
+                marcador.off('popupopen');
+                marcador.on('popupopen', function() {
+                    const idx = marcadores.casasCambio.indexOf(marcador);
+                    const cambio = casasCambio[idx];
+                    
+                    let popupContent;
+                    if (pousadaSelecionada) {
+                        const pousadaNome = pousadas[pousadaSelecionada].nome;
+                        popupContent = `
+                            <div>
+                                <h3>💱 ${cambio.nome}</h3>
+                                <p>${cambio.descricao}</p>
+                                <div class="popup-info">
+                                    <p><strong>Partindo de:</strong> ${pousadaNome}</p>
+                                    <button class="popup-button rota-cambio-btn" data-cambio="${idx}" data-pousada="${pousadaSelecionada}">
+                                        📍 Como chegar da minha pousada
+                                    </button>
+                                </div>
+                            </div>
+                        `;
+                    } else {
+                        popupContent = `
+                            <div>
+                                <h3>💱 ${cambio.nome}</h3>
+                                <p>${cambio.descricao}</p>
+                                <div class="popup-info">
+                                    <label for="select-pousada-cambio-${idx}">Partir de:</label>
+                                    <select id="select-pousada-cambio-${idx}" class="select-pousada-cambio">
+                                        <option value="">Selecione a pousada</option>
+                                        <option value="pousada1">Pousada Centro Class</option>
+                                        <option value="pousada2">Pousada Casa Centro</option>
+                                        <option value="pousada3">Pousada Centro Up</option>
+                                    </select>
+                                    <button class="popup-button rota-cambio-btn" data-cambio="${idx}">Como chegar aqui</button>
+                                </div>
+                            </div>
+                        `;
+                    }
+                    marcador.setPopupContent(popupContent);
+                });
+            }
+        });
+    }
 }
 
 let rotaAtual = null;
@@ -547,39 +734,34 @@ async function calcularRota(destino, nomeDestino) {
     if (praiasComModal.includes(nomeDestino)) {
         const escolha = await showGeribaModal();
         if (escolha === 'van') {
-            // Definir pontos de van
             let pontoVanCentro, pontoVanDestino;
-            if (pousadaSelecionada === "pousada1" || pousadaSelecionada === "pousada2") {
-                pontoVanCentro = transportes.find(t => t.nome === "Ponto de Van Centro 1");
-            } else if (pousadaSelecionada === "pousada3") {
-                pontoVanCentro = transportes.find(t => t.nome === "Ponto de Van Centro 2");
-            }
-
-            // Seleciona o ponto de van mais próximo da praia de destino
             let nomePontoVanDestino = null;
-            if (nomeDestino === "Praia de Geribá") {
-                nomePontoVanDestino = "Ponto de Van - Geribá";
-            } else if (nomeDestino === "Praia da Tartaruga") {
-                nomePontoVanDestino = "Ponto de Van Tartaruga";
-            } else if (nomeDestino === "Praia dos Ossos" || nomeDestino === "Praia de João Fernandes" || nomeDestino === "Praia da Azeda") {
-                nomePontoVanDestino = "Ponto de Van - João Fernandes, Ossos e Azeda";
-            }
-            pontoVanDestino = transportes.find(t => t.nome === nomePontoVanDestino);
 
-            // Forçar rota das vans para João Fernandes, Azeda e Ossos por Estrada da Usina e Rua São Cristóvão
-            if (
-                ["Praia dos Ossos", "Praia de João Fernandes", "Praia da Azeda"].includes(nomeDestino)
-                && escolha === 'van'
-            ) {
-                // Coordenadas intermediárias (exemplo, ajuste conforme necessário)
-                const estradaUsina = [-22.75538966538908, -41.88325369051995]; // Estrada da Usina
-                const ruaSaoCristovao = [-22.75049162177553, -41.87742452919048]; // Rua São Cristóvão
+            if (nomeDestino === "Praia de Geribá" || nomeDestino === "Praia da Tartaruga") {
+                // Para Geribá e Tartaruga
+                if (pousadaSelecionada === "pousada3") {
+                    pontoVanCentro = transportes.find(t => t.nome === "Ponto de Van Centro 2");
+                } else {
+                    pontoVanCentro = transportes.find(t => t.nome === "Ponto de Van Centro 1");
+                }
+                nomePontoVanDestino = nomeDestino === "Praia de Geribá"
+                    ? "Ponto de Van - Geribá"
+                    : "Ponto de Van Tartaruga";
+                pontoVanDestino = transportes.find(t => t.nome === nomePontoVanDestino);
 
+                // Caminho a pé da pousada até o ponto de van
+                let rotaAPe = L.polyline([origem, pontoVanCentro.coordenadas], {
+                    color: '#007bff',
+                    weight: 4,
+                    dashArray: '6, 8',
+                    opacity: 0.8
+                }).addTo(map);
+                rotaAPe.bindPopup("Caminhe até o ponto de van");
+
+                // Trajeto de van do ponto escolhido até o ponto de van de destino
                 rotaControl = L.Routing.control({
                     waypoints: [
                         L.latLng(pontoVanCentro.coordenadas[0], pontoVanCentro.coordenadas[1]),
-                        L.latLng(estradaUsina[0], estradaUsina[1]),
-                        L.latLng(ruaSaoCristovao[0], ruaSaoCristovao[1]),
                         L.latLng(pontoVanDestino.coordenadas[0], pontoVanDestino.coordenadas[1])
                     ],
                     routeWhileDragging: false,
@@ -598,15 +780,6 @@ async function calcularRota(destino, nomeDestino) {
                 rotaControl.on('routeselected', function() {
                     document.querySelectorAll('.leaflet-routing-container').forEach(el => el.style.display = 'none');
                 });
-
-                // Caminho a pé da pousada até o ponto de van (linha reta)
-                let rotaAPe = L.polyline([origem, pontoVanCentro.coordenadas], {
-                    color: '#007bff',
-                    weight: 4,
-                    dashArray: '6, 8',
-                    opacity: 0.8
-                }).addTo(map);
-                rotaAPe.bindPopup("Caminhe até o ponto de van");
 
                 // Caminho a pé do ponto de van até a praia
                 rotaControl2 = L.Routing.control({
@@ -631,75 +804,86 @@ async function calcularRota(destino, nomeDestino) {
                     document.querySelectorAll('.leaflet-routing-container').forEach(el => el.style.display = 'none');
                 });
 
-                let bounds = L.latLngBounds([origem, pontoVanCentro.coordenadas, estradaUsina, ruaSaoCristovao, pontoVanDestino.coordenadas, destino]);
+                let bounds = L.latLngBounds([origem, pontoVanCentro.coordenadas, pontoVanDestino.coordenadas, destino]);
+                map.fitBounds(bounds, { padding: [20, 20] });
+
+                rotaAtual = [rotaAPe];
+                return;
+            } else if (
+                nomeDestino === "Praia dos Ossos" ||
+                nomeDestino === "Praia de João Fernandes" ||
+                nomeDestino === "Praia da Azeda"
+            ) {
+                nomePontoVanDestino = "Ponto de Van - João Fernandes, Ossos e Azeda";
+                pontoVanDestino = transportes.find(t => t.nome === nomePontoVanDestino);
+
+                if (pousadaSelecionada === "pousada3") {
+                    pontoVanCentro = transportes.find(t => t.nome === "Ponto de Van Centro 4");
+                } else {
+                    pontoVanCentro = transportes.find(t => t.nome === "Ponto de Van Centro 3");
+                }
+
+                // Caminho a pé da pousada até o ponto de van
+                let rotaAPe = L.polyline([origem, pontoVanCentro.coordenadas], {
+                    color: '#007bff',
+                    weight: 4,
+                    dashArray: '6, 8',
+                    opacity: 0.8
+                }).addTo(map);
+                rotaAPe.bindPopup("Caminhe até o ponto de van");
+
+                // Trajeto de van do ponto escolhido até o ponto de van de destino
+                rotaControl = L.Routing.control({
+                    waypoints: [
+                        L.latLng(pontoVanCentro.coordenadas[0], pontoVanCentro.coordenadas[1]),
+                        L.latLng(pontoVanDestino.coordenadas[0], pontoVanDestino.coordenadas[1])
+                    ],
+                    routeWhileDragging: false,
+                    draggableWaypoints: false,
+                    addWaypoints: false,
+                    show: false,
+                    lineOptions: {
+                        styles: [{ color: '#ff6b35', weight: 5 }]
+                    },
+                    createMarker: function() { return null; },
+                    router: L.Routing.osrmv1({ serviceUrl: 'https://router.project-osrm.org/route/v1' }),
+                    fitSelectedRoutes: false,
+                    showAlternatives: false
+                }).addTo(map);
+
+                rotaControl.on('routeselected', function() {
+                    document.querySelectorAll('.leaflet-routing-container').forEach(el => el.style.display = 'none');
+                });
+
+                // Caminho a pé do ponto de van até a praia
+                rotaControl2 = L.Routing.control({
+                    waypoints: [
+                        L.latLng(pontoVanDestino.coordenadas[0], pontoVanDestino.coordenadas[1]),
+                        L.latLng(destino[0], destino[1])
+                    ],
+                    routeWhileDragging: false,
+                    draggableWaypoints: false,
+                    addWaypoints: false,
+                    show: false,
+                    lineOptions: {
+                        styles: [{ color: '#28a745', weight: 5 }]
+                    },
+                    createMarker: function() { return null; },
+                    router: L.Routing.osrmv1({ serviceUrl: 'https://router.project-osrm.org/route/v1' }),
+                    fitSelectedRoutes: false,
+                    showAlternatives: false
+                }).addTo(map);
+
+                rotaControl2.on('routeselected', function() {
+                    document.querySelectorAll('.leaflet-routing-container').forEach(el => el.style.display = 'none');
+                });
+
+                let bounds = L.latLngBounds([origem, pontoVanCentro.coordenadas, pontoVanDestino.coordenadas, destino]);
                 map.fitBounds(bounds, { padding: [20, 20] });
 
                 rotaAtual = [rotaAPe];
                 return;
             }
-
-            // 1. Caminho a pé da pousada até o ponto de van (linha reta)
-            let rotaAPe = L.polyline([origem, pontoVanCentro.coordenadas], {
-                color: '#007bff',
-                weight: 4,
-                dashArray: '6, 8',
-                opacity: 0.8
-            }).addTo(map);
-            rotaAPe.bindPopup("Caminhe até o ponto de van");
-
-            // 2. Caminho real do ponto de van até o ponto de van próximo à praia
-            rotaControl = L.Routing.control({
-                waypoints: [
-                    L.latLng(pontoVanCentro.coordenadas[0], pontoVanCentro.coordenadas[1]),
-                    L.latLng(pontoVanDestino.coordenadas[0], pontoVanDestino.coordenadas[1])
-                ],
-                routeWhileDragging: false,
-                draggableWaypoints: false,
-                addWaypoints: false,
-                show: false,
-                lineOptions: {
-                    styles: [{ color: '#ff6b35', weight: 5 }]
-                },
-                createMarker: function() { return null; },
-                router: L.Routing.osrmv1({ serviceUrl: 'https://router.project-osrm.org/route/v1' }),
-                fitSelectedRoutes: false,
-                showAlternatives: false
-            }).addTo(map);
-
-            rotaControl.on('routeselected', function() {
-                document.querySelectorAll('.leaflet-routing-container').forEach(el => el.style.display = 'none');
-            });
-
-            // 3. Caminho real do ponto de van até a praia (a pé)
-            rotaControl2 = L.Routing.control({
-                waypoints: [
-                    L.latLng(pontoVanDestino.coordenadas[0], pontoVanDestino.coordenadas[1]),
-                    L.latLng(destino[0], destino[1])
-                ],
-                routeWhileDragging: false,
-                draggableWaypoints: false,
-                addWaypoints: false,
-                show: false,
-                lineOptions: {
-                    styles: [{ color: '#28a745', weight: 5 }]
-                },
-                createMarker: function() { return null; },
-                router: L.Routing.osrmv1({ serviceUrl: 'https://router.project-osrm.org/route/v1' }),
-                fitSelectedRoutes: false,
-                showAlternatives: false
-            }).addTo(map);
-
-            rotaControl2.on('routeselected', function() {
-                document.querySelectorAll('.leaflet-routing-container').forEach(el => el.style.display = 'none');
-            });
-
-            // Ajustar visualização
-            let bounds = L.latLngBounds([origem, pontoVanCentro.coordenadas, pontoVanDestino.coordenadas, destino]);
-            map.fitBounds(bounds, { padding: [20, 20] });
-
-            // Guardar para limpar depois
-            rotaAtual = [rotaAPe];
-            return;
         } else if (escolha === 'andando') {
             // Rota real da pousada até a praia (apenas 1 rota)
             rotaControl = L.Routing.control({
@@ -725,6 +909,77 @@ async function calcularRota(destino, nomeDestino) {
             });
             return;
         }
+    } else if (nomeDestino === "Praia Brava") {
+        let pontoVanCentro, pontoVanDestino;
+        // Definir ponto de van de acordo com a pousada
+        if (pousadaSelecionada === "pousada3") {
+            pontoVanCentro = transportes.find(t => t.nome === "Ponto de Van Centro 4");
+        } else {
+            pontoVanCentro = transportes.find(t => t.nome === "Ponto de Van Centro 3");
+        }
+        pontoVanDestino = transportes.find(t => t.nome === "Ponto da Brava");
+
+        // Caminho a pé da pousada até o ponto de van
+        let rotaAPe = L.polyline([origem, pontoVanCentro.coordenadas], {
+            color: '#007bff',
+            weight: 4,
+            dashArray: '6, 8',
+            opacity: 0.8
+        }).addTo(map);
+        rotaAPe.bindPopup("Caminhe até o ponto de van");
+
+        // Trajeto de van do ponto escolhido até o ponto de van de destino
+        rotaControl = L.Routing.control({
+            waypoints: [
+                L.latLng(pontoVanCentro.coordenadas[0], pontoVanCentro.coordenadas[1]),
+                L.latLng(pontoVanDestino.coordenadas[0], pontoVanDestino.coordenadas[1])
+            ],
+            routeWhileDragging: false,
+            draggableWaypoints: false,
+            addWaypoints: false,
+            show: false,
+            lineOptions: {
+                styles: [{ color: '#ff6b35', weight: 5 }]
+            },
+            createMarker: function() { return null; },
+            router: L.Routing.osrmv1({ serviceUrl: 'https://router.project-osrm.org/route/v1' }),
+            fitSelectedRoutes: false,
+            showAlternatives: false
+        }).addTo(map);
+
+        rotaControl.on('routeselected', function() {
+            document.querySelectorAll('.leaflet-routing-container').forEach(el => el.style.display = 'none');
+        });
+
+        // Caminho a pé do ponto de van até a praia, passando pelo waypoint
+        rotaControl2 = L.Routing.control({
+            waypoints: [
+                L.latLng(pontoVanDestino.coordenadas[0], pontoVanDestino.coordenadas[1]),
+                L.latLng(-22.753560513401528, -41.87723742716553), // Waypoint intermediário
+                L.latLng(destino[0], destino[1])
+            ],
+            routeWhileDragging: false,
+            draggableWaypoints: false,
+            addWaypoints: false,
+            show: false,
+            lineOptions: {
+                styles: [{ color: '#28a745', weight: 5 }]
+            },
+            createMarker: function() { return null; },
+            router: L.Routing.osrmv1({ serviceUrl: 'https://router.project-osrm.org/route/v1' }),
+            fitSelectedRoutes: false,
+            showAlternatives: false
+        }).addTo(map);
+
+        rotaControl2.on('routeselected', function() {
+            document.querySelectorAll('.leaflet-routing-container').forEach(el => el.style.display = 'none');
+        });
+
+        let bounds = L.latLngBounds([origem, pontoVanCentro.coordenadas, pontoVanDestino.coordenadas, [-22.753560513401528, -41.87723742716553], destino]);
+        map.fitBounds(bounds, { padding: [20, 20] });
+
+        rotaAtual = [rotaAPe];
+        return;
     }
 
     // Rota tradicional para outras praias
@@ -914,4 +1169,96 @@ function limparRotas() {
         });
         rotaAtual = null;
     }
+}
+
+// ===== CONFIGURAÇÃO DOS FILTROS DA LEGENDA =====
+function configurarFiltrosLegenda() {
+    // Filtro para pousadas
+    document.getElementById('filtro-pousadas').addEventListener('change', function(e) {
+        if (e.target.checked) {
+            map.addLayer(grupoMarcadores.pousadas);
+        } else {
+            map.removeLayer(grupoMarcadores.pousadas);
+        }
+    });
+
+    // Filtro para praias
+    document.getElementById('filtro-praias').addEventListener('change', function(e) {
+        if (e.target.checked) {
+            map.addLayer(grupoMarcadores.praias);
+        } else {
+            map.removeLayer(grupoMarcadores.praias);
+        }
+    });
+
+    // Filtro para transportes (van e ônibus)
+    document.getElementById('filtro-van').addEventListener('change', function(e) {
+        if (marcadoresVan) {
+            marcadoresVan.forEach(marker => {
+                if (e.target.checked) {
+                    if (!map.hasLayer(marker)) map.addLayer(marker);
+                } else {
+                    if (map.hasLayer(marker)) map.removeLayer(marker);
+                }
+            });
+        }
+    });
+
+    document.getElementById('filtro-onibus').addEventListener('change', function(e) {
+        if (marcadoresOnibus) {
+            marcadoresOnibus.forEach(marker => {
+                if (e.target.checked) {
+                    if (!map.hasLayer(marker)) map.addLayer(marker);
+                } else {
+                    if (map.hasLayer(marker)) map.removeLayer(marker);
+                }
+            });
+        }
+    });
+
+    // Filtro para escuna (rota e marcadores)
+    document.getElementById('filtro-escuna').addEventListener('change', function(e) {
+        if (rotaEscuna) {
+            if (e.target.checked) {
+                if (!map.hasLayer(rotaEscuna)) map.addLayer(rotaEscuna);
+            } else {
+                if (map.hasLayer(rotaEscuna)) map.removeLayer(rotaEscuna);
+            }
+        }
+        if (marcadoresEscuna) {
+            marcadoresEscuna.forEach(marker => {
+                if (e.target.checked) {
+                    if (!map.hasLayer(marker)) map.addLayer(marker);
+                } else {
+                    if (map.hasLayer(marker)) map.removeLayer(marker);
+                }
+            });
+        }
+    });
+
+    // Filtro para feirinha
+    document.getElementById('filtro-feirinha').addEventListener('change', function(e) {
+        if (marcadoresFeirinha) {
+            marcadoresFeirinha.forEach(marker => {
+                if (e.target.checked) {
+                    if (!map.hasLayer(marker)) map.addLayer(marker);
+                } else {
+                    if (map.hasLayer(marker)) map.removeLayer(marker);
+                }
+            });
+        }
+    });
+
+    // Filtro para casas de câmbio
+    document.getElementById('filtro-cambio').addEventListener('change', function(e) {
+        if (marcadores.casasCambio) {
+            marcadores.casasCambio.forEach(marker => {
+                if (e.target.checked) {
+                    if (!map.hasLayer(marker)) map.addLayer(marker);
+                } else {
+                    if (map.hasLayer(marker)) map.removeLayer(marker);
+                }
+            });
+        }
+    });
 }
